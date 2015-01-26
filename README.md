@@ -2,17 +2,18 @@
 
 Implementations of the following algorithms:
 
-+ Binary Search
-+ Closest Pair
-+ Counting Inversions
-+ Dynamic Connectivity
-+ Strassen's algorithm
-+ Karatsuba Multiplication
-+ Sorting algorithms
-    + Bubble Sort (Java and C++)
-    + Heap Sort (C++)
-    + Insertion Sort (Java and C++)
-    + Merge Sort (Java and C++)
-    + Quick Sort (Java and C++)
-    + Selection Sort (Java and C++)
-    + Shell Sort (C++)
++ [Binary search algorithm](http://en.wikipedia.org/wiki/Binary_search_algorithm)
++ [Closest pair of points problem](http://en.wikipedia.org/wiki/Closest_pair_of_points_problem)
++ [Counting inversions](http://en.wikipedia.org/wiki/Inversion_%28discrete_mathematics%29)
++ [Dynamic connectivity](http://algs4.cs.princeton.edu/15uf/)
++ [Strassen algorithm](http://en.wikipedia.org/wiki/Strassen_algorithm)
++ [Karatsuba algorithm](http://en.wikipedia.org/wiki/Karatsuba_algorithm)
++ [Sorting algorithms](http://en.wikipedia.org/wiki/Sorting_algorithm)
+    + [Bubble Sort](http://en.wikipedia.org/wiki/Bubble_sort) (Java and C++)
+    + [HeapSort](http://en.wikipedia.org/wiki/Heapsort) (C++)
+    + [Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort) (Java and C++)
+    + [Merge Sort](http://en.wikipedia.org/wiki/Merge_sort) (Java and C++)
+    + [Quicksort](http://en.wikipedia.org/wiki/Quicksort) (Java and C++)
+    + [Selection Sort](http://en.wikipedia.org/wiki/Selection_sort) (Java and C++)
+    + [Shell Sort](http://en.wikipedia.org/wiki/Shellsort) (C++)
++ [Tower of Hanoi](http://en.wikipedia.org/wiki/Tower_of_Hanoi)
