@@ -1,13 +1,13 @@
-# Algorithms
+# Algorithms Implementations
 
 Implementations of the following algorithms:
 
-+ [Binary search algorithm](http://en.wikipedia.org/wiki/Binary_search_algorithm)
-+ [Closest pair of points problem](http://en.wikipedia.org/wiki/Closest_pair_of_points_problem)
-+ [Counting inversions](http://en.wikipedia.org/wiki/Inversion_%28discrete_mathematics%29)
-+ [Dynamic connectivity](http://algs4.cs.princeton.edu/15uf/)
-+ [Strassen algorithm](http://en.wikipedia.org/wiki/Strassen_algorithm)
-+ [Karatsuba algorithm](http://en.wikipedia.org/wiki/Karatsuba_algorithm)
++ [Binary search algorithm](http://en.wikipedia.org/wiki/Binary_search_algorithm) (Java)
++ [Closest pair of points problem](http://en.wikipedia.org/wiki/Closest_pair_of_points_problem) (Java)
++ [Counting inversions](http://en.wikipedia.org/wiki/Inversion_%28discrete_mathematics%29) (Java)
++ [Dynamic connectivity](http://algs4.cs.princeton.edu/15uf/) (Java)
++ [Strassen algorithm](http://en.wikipedia.org/wiki/Strassen_algorithm) (Java)
++ [Karatsuba algorithm](http://en.wikipedia.org/wiki/Karatsuba_algorithm) (Java)
 + [Sorting algorithms](http://en.wikipedia.org/wiki/Sorting_algorithm)
     + [Bubble Sort](http://en.wikipedia.org/wiki/Bubble_sort) (Java and C++)
     + [HeapSort](http://en.wikipedia.org/wiki/Heapsort) (C++)
@@ -16,4 +16,4 @@ Implementations of the following algorithms:
     + [Quicksort](http://en.wikipedia.org/wiki/Quicksort) (Java and C++)
     + [Selection Sort](http://en.wikipedia.org/wiki/Selection_sort) (Java and C++)
     + [Shell Sort](http://en.wikipedia.org/wiki/Shellsort) (C++)
-+ [Tower of Hanoi](http://en.wikipedia.org/wiki/Tower_of_Hanoi)
++ [Tower of Hanoi](http://en.wikipedia.org/wiki/Tower_of_Hanoi) (Java)
