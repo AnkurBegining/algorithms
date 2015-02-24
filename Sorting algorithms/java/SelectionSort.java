@@ -30,9 +30,7 @@ public class SelectionSort {
                 if (array[index_of_smallest] > array[j])
                     index_of_smallest = j;
 
-            int temp = array[i];
-            array[i] = array[index_of_smallest];
-            array[index_of_smallest] = temp;
+            Helper.swap(i, index_of_smallest, array);
             
         }
 

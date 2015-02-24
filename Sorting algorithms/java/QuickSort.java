@@ -28,9 +28,7 @@ public class QuickSort {
             int pivot_index = (int)(Math.random()*(right-left+1) + left);
 
             //swap pivot with leftmost element corresponding to the array section we're working on
-            int temp = array[pivot_index];
-            array[pivot_index] = array[left];
-            array[left] = temp;
+            Helper.swap(pivot_index, left, array);
 
             //change the pivot index accordingly
             pivot_index = left;
@@ -42,17 +40,13 @@ public class QuickSort {
             for (int j = left + 1; j <= right; j++)
                 
                 if (array[j] < array[pivot_index]) { //swap
-                    int temp2 = array[i];
-                    array[i] = array[j];
-                    array[j] = temp2;
+                    Helper.swap(i, j, array);
                     i++;
                 }
 
 
             //final swap of the pivot with the rightmost element in the left partitioned section of the array
-            int temp2 = array[pivot_index];
-            array[pivot_index] = array[i-1];
-            array[i-1] = temp2;
+            Helper.swap(pivot_index, i-1, array);
 
             //Recurse on the left side (without the pivot)
             sort(array, left, i-2);

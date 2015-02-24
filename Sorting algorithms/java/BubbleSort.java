@@ -27,9 +27,7 @@ public class BubbleSort {
             swap = false;
             for (int i = 0; i < length-1; i++)
                 if(array[i] > array[i+1]) {
-                    int temp = array[i];
-                    array[i] = array[i+1];
-                    array[i+1] = temp;
+                    Helper.swap(i, i+1, array);
                     swap = true;
                 }
             length--;
