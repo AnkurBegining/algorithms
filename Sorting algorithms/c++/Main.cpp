@@ -6,36 +6,79 @@
 #include "MergeSort.hpp"
 #include "HeapSort.hpp"
 #include "Helper.hpp"
+
 #include <iostream>
 
 int main()
 {
-    int size = 30;
-    int array[size];
-    generate(array, size);
-    print(array, size);
+    const int SIZE = 30;
+    int array[SIZE];
 
-    selection_sort(array, size);
-    print(array, size);
+    srand(time(NULL)); 
 
-    //insertion_sort(array, size);
-    //print(array, size);
+    // Selection sort
+    generate(array, SIZE);
+    std::cout << "Generated array: ";
+    print(array, SIZE);
+    selection_sort(array, SIZE);
+    std::cout << "Sorted array: ";
+    print(array, SIZE);
+    std::cout << std::endl;
 
-    //bubble_sort(array, size);
-    //print(array, size);
+    // Insertion sort
+    generate(array, SIZE);
+    std::cout << "Generated array: ";
+    print(array, SIZE);
+    insertion_sort(array, SIZE);
+    std::cout << "Sorted array: ";
+    print(array, SIZE);
+    std::cout << std::endl;
 
-    //quick_sort(array, 0, size-1);
-    //print(array, size);
+    // Bubble sort
+    generate(array, SIZE);
+    std::cout << "Generated array: ";
+    print(array, SIZE);
+    bubble_sort(array, SIZE);
+    std::cout << "Sorted array: ";
+    print(array, SIZE);
+    std::cout << std::endl;
 
-    //shell_sort(array, size); 
-    //print(array, size);
+    // Quick sort
+    generate(array, SIZE);
+    std::cout << "Generated array: ";
+    print(array, SIZE);
+    quick_sort(array, 0, SIZE-1);
+    std::cout << "Sorted array: ";
+    print(array, SIZE);
+    std::cout << std::endl;
 
-    //int array2[size];
-    //merge_sort(array, array2, 0, size-1);
-    //print(array, size);
+    // Shell sort
+    generate(array, SIZE);
+    std::cout << "Generated array: ";
+    print(array, SIZE);
+    shell_sort(array, SIZE);
+    std::cout << "Sorted array: ";
+    print(array, SIZE);
+    std::cout << std::endl;
 
-    //heap_sort(array, size);
-    //print(array, size);
+    // Merge sort
+    generate(array, SIZE);
+    std::cout << "Generated array: ";
+    print(array, SIZE);
+    int array2[SIZE];
+    merge_sort(array, array2, 0, SIZE-1);
+    std::cout << "Sorted array: ";
+    print(array, SIZE);
+    std::cout << std::endl;
+
+    // Heap sort
+    generate(array, SIZE);
+    std::cout << "Generated array: ";
+    print(array, SIZE);
+    heap_sort(array, SIZE);
+    std::cout << "Sorted array: ";
+    print(array, SIZE);
+    std::cout << std::endl;
 
     return 0;
 }

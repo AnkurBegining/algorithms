@@ -5,10 +5,9 @@
 #include <ctime>
 #include <cstdlib>
 
+
 void generate(int array[], int amount)
 {
-    srand(time(NULL)); 
-
     for (int i = 0; i < amount; i++)
         array[i] = rand()%100;
 }
@@ -24,7 +23,7 @@ void print(int array[], int size)
 {
     for (int i = 0; i < size; i++)
         std::cout << array[i] << ( (i != size-1) ? ", " : "");
-    std::cout << std::endl << std::endl;
+    std::cout << std::endl;
 }
 
 #endif // HELPER_HPP
