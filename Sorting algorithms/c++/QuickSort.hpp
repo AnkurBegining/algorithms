@@ -24,7 +24,7 @@ void quick_sort(int array[], int low, int high)
             j--;
 
         if (i <= j) {
-            swap(array, i, j);
+            swap(array[i], array[j]);
             i++;
             j--;
         }

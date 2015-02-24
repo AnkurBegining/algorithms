@@ -11,11 +11,11 @@ void generate(int array[], int amount)
         array[i] = rand()%100;
 }
 
-void swap(int array[], int i, int j)
+void swap(int &a, int &b)
 {
-    int temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+    int temp = a;
+    a = b;
+    b = temp;
 }
 
 void print(int array[], int size)

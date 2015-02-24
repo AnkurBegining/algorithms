@@ -12,7 +12,7 @@
 void swim(int array[], int i)
 {
     while (i != 0 && array[i] > array[i/2]) {
-        swap(array, i, i/2);
+        swap(array[i], array[i/2]);
         i /= 2;
     }
 }
@@ -24,7 +24,7 @@ void sink(int heap[], int size, int i)
         if (heap[j+1] > heap[j])
             j++;
         if (heap[i] < heap[j])
-            swap(heap, i, j);
+            swap(heap[i], heap[j]);
         i = j;
     }
 }
