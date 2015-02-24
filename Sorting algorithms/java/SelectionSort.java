@@ -4,6 +4,7 @@
  * Worst case performance is O(n^2)
  * Best case performance is O(n^2)
  * Average case performance is O(n^2)
+ * Worst case space complexity is O(n) total, O(1) auxiliary
  * 
  * */
 

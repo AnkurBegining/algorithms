@@ -4,6 +4,7 @@
  * Worst case performance is O(n^2) comparisons and swaps
  * Best case performance is O(n) comparisons, O(1) swaps
  * Average case performance is O(n^2) comparisons and swaps
+ * Worst case space complexity is O(n) total, O(1) auxiliary
  * 
  * */
 
