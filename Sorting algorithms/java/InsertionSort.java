@@ -10,19 +10,27 @@
 
 import java.util.Arrays;
 
-public class InsertionSort {
-
-    public static void main(String[] args)  {
-        
+public class InsertionSort
+{
+    public static void main(String[] args)
+    {
         int[] array = RandomList.generate();
         System.out.println("Generated array: " + Arrays.toString(array));
         sort(array);    
         System.out.println("Sorted array: " + Arrays.toString(array));
-
     }
 
-    public static void sort(int[] array) {
-        
+    public static void sort(int[] array)
+    {
+        for (int i = 1; i < array.length; i++)
+            for (int j = i; j > 0 && array[j-1] > array[j]; j--)
+                Helper.swap(j, j-1, array);
+    }
+
+    /*
+    // Slightly faster version
+    public static void sort(int[] array)
+    {
         for (int i = 1; i < array.length; i++)
             for (int j = 0; j < i; j++)
                 if (array[i] < array[j]) {
@@ -32,7 +40,6 @@ public class InsertionSort {
                     array[j] = temp;
                     break;
                 }
-
     }
-
+    */
 }

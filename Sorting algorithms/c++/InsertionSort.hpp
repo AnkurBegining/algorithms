@@ -16,3 +16,15 @@ void insertion_sort(int array[], int size)
                swap(array[j], array[j-1]);
 }
 
+/*
+// Slightly faster version
+void insertion_sort(int array[], int size)
+{
+    for (int i = 1; i < size-1; i++) {
+        int x = array[i];
+        for (int j = i; j > 0 && array[j-1] > x; j--)
+            array[j] = array[j-1];
+        array[j] = x;
+    }
+}
+*/
