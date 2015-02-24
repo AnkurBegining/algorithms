@@ -5,7 +5,6 @@
 #include <ctime>
 #include <cstdlib>
 
-
 void generate(int array[], int amount)
 {
     for (int i = 0; i < amount; i++)

@@ -1,5 +1,14 @@
 #include "Helper.hpp"
 
+/* Merge sort
+ * 
+ * Worst case performance is O(nlog(n));
+ * Best case performance is O(nlog(n)) typical, O(n) natural variant
+ * Average case performance is O(nlog(n))
+ * Worst case space complexity O(n) auxiliary
+ * 
+ * */
+
 void merge(int A[], int B[], int low, int mid, int high)
 {
     int i, j, k;

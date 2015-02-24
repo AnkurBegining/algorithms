@@ -2,9 +2,11 @@
 
 /* Randomized Quicksort 
  * 
- * Worst case performance is O(nlog(n))
- * Best case performance is O(nlog(n))
+ * Worst case performance if randomized is O(nlogn)
+ * Worst case performance if not randomized is O(n^2)
+ * Best case performance is O(nlog(n)) simple partition, O(n) (three-way partition and equal keys)
  * Average case performance is O(nlog(n))
+ * Worst case space complexity O(n) auxiliary (naive), O(log(n)) auxiliary (Sedgewick 1978)
  * 
  * */
 

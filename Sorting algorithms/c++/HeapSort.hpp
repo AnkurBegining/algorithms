@@ -1,5 +1,14 @@
 #include "Helper.hpp"
 
+/* Heap sort
+ * 
+ * Worst case performance is O(nlog(n))
+ * Best case performance is O(nlog(n))
+ * Average case performance is O(nlog(n))
+ * Worst case space complexity is O(1) auxiliary
+ * 
+ * */
+
 void swim(int array[], int i)
 {
     while (i != 0 && array[i] > array[i/2]) {
