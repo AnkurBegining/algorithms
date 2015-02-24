@@ -41,8 +41,8 @@ void merge_sort(int A[], int B[], int low, int high)
     merge_sort(A, B, low, mid);
     merge_sort(A, B, mid+1, high);
     merge(A, B, low, mid, high);
+
     // Copy array
     for (int i = low; i <= high; i++)
         A[i] = B[i];
 }
-
