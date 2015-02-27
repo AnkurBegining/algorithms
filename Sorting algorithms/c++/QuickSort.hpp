@@ -23,11 +23,8 @@ void quick_sort(int array[], int low, int high)
         while (array[j] > pivot)
             j--;
 
-        if (i <= j) {
-            swap(array[i], array[j]);
-            i++;
-            j--;
-        }
+        if (i <= j)
+            swap(array[i++], array[j--]);
     }
 
     if (low < j)
