@@ -20,9 +20,10 @@ void swap(int &a, int &b)
 
 void print(int array[], int size)
 {
+    std::cout << "[ ";
     for (int i = 0; i < size; i++)
         std::cout << array[i] << ( (i != size-1) ? ", " : "");
-    std::cout << std::endl;
+    std::cout << " ]" << std::endl;
 }
 
 #endif // HELPER_HPP

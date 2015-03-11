@@ -1,16 +1,15 @@
 #include "Helper.hpp"
 
-/* Randomized Quicksort 
+/* Quicksort 
  * 
- * Worst case performance if randomized is O(nlogn)
- * Worst case performance if not randomized is O(n^2)
+ * Worst case performance is O(n^2)
  * Best case performance is O(nlog(n)) simple partition, O(n) (three-way partition and equal keys)
  * Average case performance is O(nlog(n))
  * Worst case space complexity O(n) auxiliary (naive), O(log(n)) auxiliary (Sedgewick 1978)
  * 
  * */
 
-void quick_sort(int array[], int low, int high)
+void quick_sort2(int array[], int low, int high)
 {
     int pivot = array[(low+high)/2];
 
@@ -28,8 +27,8 @@ void quick_sort(int array[], int low, int high)
     }
 
     if (low < j)
-        quick_sort(array, low, j);
+        quick_sort2(array, low, j);
 
     if (i < high)
-        quick_sort(array, i, high);
+        quick_sort2(array, i, high);
 }
