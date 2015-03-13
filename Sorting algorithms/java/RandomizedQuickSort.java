@@ -11,7 +11,7 @@
 
 import java.util.Arrays;
 
-public class RandomizeQuickSort
+public class RandomizedQuickSort
 {
     public static void main(String[] args)
     {
