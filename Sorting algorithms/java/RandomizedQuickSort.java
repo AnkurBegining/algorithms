@@ -21,37 +21,37 @@ public class RandomizedQuickSort
         System.out.println("Sorted array: " + Arrays.toString(array));
     }
 
-    public static void sort(int[] array, int left, int right)
+    public static void sort(int[] array, int low, int high)
     {
-        if (left < right) {
+        if (low < high) {
 
             // Pivot is chosen randomly among the elements corresponding the array section we are working on
-            int pivot_index = (int)(Math.random()*(right-left+1) + left);
+            int pivot_index = (int)(Math.random()*(high-low+1) + low);
 
-            // Swap pivot with leftmost element corresponding to the array section we're working on
-            Helper.swap(pivot_index, left, array);
+            // Swap pivot with lowmost element corresponding to the array section we're working on
+            Helper.swap(pivot_index, low, array);
 
             // Change the pivot index accordingly
-            pivot_index = left;
+            pivot_index = low;
             
-            // i tracks the leftmost element bigger than the pivot 
-            int i = left + 1;
+            // i tracks the lowmost element bigger than the pivot 
+            int i = low + 1;
 
             // Partitioning
-            for (int j = left + 1; j <= right; j++)
+            for (int j = low + 1; j <= high; j++)
                 if (array[j] < array[pivot_index]) { //swap
                     Helper.swap(i, j, array);
                     i++;
                 }
 
-            // Final swap of the pivot with the rightmost element in the left partitioned section of the array
+            // Final swap of the pivot with the highmost element in the low partitioned section of the array
             Helper.swap(pivot_index, i-1, array);
 
-            // Recurse on the left side (without the pivot)
-            sort(array, left, i-2);
+            // Recurse on the low side (without the pivot)
+            sort(array, low, i-2);
 
-            // Recurse on the right side
-            sort(array, i, right);
+            // Recurse on the high side
+            sort(array, i, high);
         }
     }
 }
