@@ -24,34 +24,28 @@ public class RandomizedQuickSort
     public static void sort(int[] array, int low, int high)
     {
         if (low < high) {
-
-            // Pivot is chosen randomly among the elements corresponding the array section we are working on
-            int pivot_index = (int)(Math.random()*(high-low+1) + low);
-
-            // Swap pivot with lowmost element corresponding to the array section we're working on
-            Helper.swap(pivot_index, low, array);
-
-            // Change the pivot index accordingly
-            pivot_index = low;
-            
-            // i tracks the lowmost element bigger than the pivot 
-            int i = low + 1;
-
-            // Partitioning
-            for (int j = low + 1; j <= high; j++)
-                if (array[j] < array[pivot_index]) { //swap
-                    Helper.swap(i, j, array);
-                    i++;
-                }
-
-            // Final swap of the pivot with the highmost element in the low partitioned section of the array
-            Helper.swap(pivot_index, i-1, array);
-
-            // Recurse on the low side (without the pivot)
-            sort(array, low, i-2);
-
-            // Recurse on the high side
-            sort(array, i, high);
+            int p = parition(array, low, high);
+            sort(array, low, p-1);
+            sort(array, p+1, high);
         }
     }
+
+    public static int parition(int[] array, int low, int high)
+    {
+        int pivotIndex = (int)(Math.random()*(high-low+1) + low);
+        int pivotValue = array[pivotIndex];
+
+        Helper.swap(pivotIndex, high, array);
+
+        int storeIndex = low;
+
+        for (int i = low; i < high; i++)
+            if (array[i] < pivotValue)
+                Helper.swap(i, storeIndex++, array);
+
+        Helper.swap(storeIndex, high, array);
+
+        return storeIndex;
+    }
+
 }
