@@ -3,6 +3,7 @@
 #include "BubbleSort.hpp"
 #include "QuickSort1.hpp"
 #include "QuickSort2.hpp"
+#include "RandomizedQuickSort.hpp"
 #include "ShellSort.hpp"
 #include "MergeSort.hpp"
 #include "HeapSort.hpp"
@@ -49,6 +50,13 @@ int main()
     generate(array, SIZE);
     print(array, SIZE);
     quick_sort2(array, 0, SIZE-1);
+    print(array, SIZE);
+    std::cout << std::endl;
+
+    std::cout << "Randomized quick sort" << std::endl;
+    generate(array, SIZE);
+    print(array, SIZE);
+    randomized_quick_sort(array, 0, SIZE-1);
     print(array, SIZE);
     std::cout << std::endl;
 
