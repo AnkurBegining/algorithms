@@ -9,7 +9,7 @@
  * 
  * */
 
-void bubble_sort1(int array[], int size)
+void bubble_sort(int array[], int size)
 {
     bool sorted = false;
     while (!sorted) {
