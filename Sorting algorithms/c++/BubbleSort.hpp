@@ -9,7 +9,7 @@
  * 
  * */
 
-void bubble_sort(int array[], int size)
+void bubble_sort1(int array[], int size)
 {
     bool sorted = false;
     while (!sorted) {
@@ -21,3 +21,14 @@ void bubble_sort(int array[], int size)
             }
     }
 }
+
+/*
+// Slightly faster version
+void bubble_sort(int array[], int size)
+{
+    for (int j = size; j >= 0; j--)
+        for (int i = 0; i < j-1; i++)
+            if (array[i+1] < array[i])
+                swap(array[i+1], array[i]);
+}
+*/
