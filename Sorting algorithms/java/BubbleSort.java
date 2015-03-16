@@ -32,4 +32,15 @@ public class BubbleSort
                 }
         }
     }
+
+    /*
+    // Slightly faster version
+    public static void sort(int[] array)
+    {
+        for (int j = array.length; j >= 0; j--)
+            for (int i = 0; i < j-1; i++)
+                if (array[i+1] < array[i])
+                    Helper.swap(i, i+1, array);
+    }
+    /*
 }
