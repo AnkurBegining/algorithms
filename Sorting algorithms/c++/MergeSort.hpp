@@ -11,9 +11,7 @@
 
 void merge(int A[], int B[], int low, int mid, int high)
 {
-    int i, j, k;
-
-    for (i = low, j = mid+1, k = low; i < mid+1 || j < high+1;) {
+    for (int i = low, j = mid+1, k = low; i < mid+1 || j < high+1;) {
         if (i == mid+1)
             while (j < high+1)
                 B[k++] = A[j++];
