@@ -3,7 +3,7 @@
 /* Merge sort
  * 
  * Worst case performance is O(nlog(n));
- * Best case performance is O(nlog(n)) typical, O(n) natural variant
+ * Best case performance is O(nlog(n)) typical
  * Average case performance is O(nlog(n))
  * Worst case space complexity O(n) auxiliary
  * 
