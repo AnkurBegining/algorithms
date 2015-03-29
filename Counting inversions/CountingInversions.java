@@ -10,11 +10,11 @@ public class CountingInversions {
         
         System.out.println( "Generated array: " + Arrays.toString(array) );
 
-        System.out.println( "Number of inversions: " + sort_and_count(array) );
+        System.out.println( "Number of inversions: " + sortAndCount(array) );
 
     }
     
-    public static int sort_and_count (int A[]) {
+    public static int sortAndCount (int A[]) {
         if (A.length <= 1)
             return 0;
 
@@ -23,12 +23,12 @@ public class CountingInversions {
             int left[] = Arrays.copyOfRange(A, 0, (A.length + 1) / 2);
             int right[] = Arrays.copyOfRange(A, (A.length + 1) / 2, A.length);
             
-            return sort_and_count(left) + sort_and_count(right) + merge_and_count_split_inversion(A, left, right);
+            return sortAndCount(left) + sortAndCount(right) + mergeAndCountSplitInversions(A, left, right);
         }
     }
 
-    public static int merge_and_count_split_inversion(int A[], int B[], int[] C) {
-        int count = 0;
+    public static int mergeAndCountSplitInversions(int A[], int B[], int[] C) {
+        int inversionCount = 0;
         for (int i = 0, j = 0, k = 0; i != B.length || j != C.length; k++) {
         
             if (i == B.length) {
@@ -55,12 +55,12 @@ public class CountingInversions {
 
                 else {
                     A[k] = C[j];
-                    count += B.length-i;
+                    inversionCount += B.length-i;
                     j++;
                 }
             }
         }
-        return count;
+        return inversionCount;
 
         //return number of split inversion
     }
