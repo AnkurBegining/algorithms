@@ -5,26 +5,19 @@ import java.util.Arrays;
 public class CountingInversions {
     
     public static void main(String args[]) {
-        
         int[] array = RandomList.generate();
-        
         System.out.println( "Generated array: " + Arrays.toString(array) );
-
         System.out.println( "Number of inversions: " + sortAndCount(array) );
-
     }
     
     public static int sortAndCount (int A[]) {
         if (A.length <= 1)
             return 0;
 
-        else {
-
-            int left[] = Arrays.copyOfRange(A, 0, (A.length + 1) / 2);
-            int right[] = Arrays.copyOfRange(A, (A.length + 1) / 2, A.length);
-            
-            return sortAndCount(left) + sortAndCount(right) + mergeAndCountSplitInversions(A, left, right);
-        }
+        int left[] = Arrays.copyOfRange(A, 0, (A.length + 1) / 2);
+        int right[] = Arrays.copyOfRange(A, (A.length + 1) / 2, A.length);
+        
+        return sortAndCount(left) + sortAndCount(right) + mergeAndCountSplitInversions(A, left, right);
     }
 
     public static int mergeAndCountSplitInversions(int A[], int B[], int[] C) {
@@ -61,7 +54,5 @@ public class CountingInversions {
             }
         }
         return inversionCount;
-
-        //return number of split inversion
     }
 }
