@@ -16,8 +16,8 @@ public class CountingInversion {
     
     public static int sort_and_count (int A[]) {
         if (A.length <= 1)
-            return 0
-;
+            return 0;
+
         else {
 
             int left[] = Arrays.copyOfRange(A, 0, (A.length + 1) / 2);
