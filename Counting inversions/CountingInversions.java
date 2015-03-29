@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class CountingInversion {
+public class CountingInversions {
     
     public static void main(String args[]) {
         
