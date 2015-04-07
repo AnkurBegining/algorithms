@@ -27,7 +27,6 @@ public class SelectionSort
             for (int j = i+1; j < array.length; j++)
                 if (array[index_of_smallest] > array[j])
                     index_of_smallest = j;
-
             Helper.swap(i, index_of_smallest, array);
         }
     }
